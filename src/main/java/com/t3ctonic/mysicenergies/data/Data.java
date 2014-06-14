@@ -9,16 +9,16 @@ public class Data extends Util
 {
     public void init()
     {
-        { /** Creativetabs */
+        { /** Creativetabs */ //addCreativeTab(int id, Creativetab tab)
             addCreativeTab(0, new TabMystic());
         }
-        { /** Blocks */
+        { /** Blocks */ //addBlock(int id, Block block)
 
         }
-        { /** Items */
+        { /** Items */ //addItem(int id, Item item)
 
         }
-        { /** Entities */
+        { /** Entities */ //addEntity(Class entityclass, String name, Render entityRender, int color, int color)
             addEntity(EntityDarkEnergyGolem.class, "darkEnergyGolem", new RenderDarkEnergyGolem(), 0, 0);
         }
     }
