@@ -10,7 +10,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class DarkEnergyGolemRender extends RenderLiving
 {
-    private static final ResourceLocation field_110827_a = new ResourceLocation("MysticEnergies:textures/mobs/DarkEnergyGolem.png");
+    private static final ResourceLocation field_110827_a = new ResourceLocation("MysticEnergies:textures/mobs/darkEnergyGolem.png");
     protected DarkEnergyGolem model;
 
     public DarkEnergyGolemRender(ModelBase par1ModelBase, float par2)

@@ -32,7 +32,7 @@ import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.EnumHelper;
 
 
-@Mod(modid = "Mystic Energies", name = "Mystic Energies", version = "0.1 Alpha")
+//@Mod(modid = "Mystic Energies", name = "Mystic Energies", version = "0.1 Alpha")
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 
 
