@@ -18,7 +18,7 @@ import net.minecraftforge.client.IItemRenderer;
 public class Util
 {
     /** Proxy */
-    @SidedProxy(clientSide = "com.ilexiconn.minedonalds.proxy.ClientProxy", serverSide = "com.ilexiconn.minedonalds.proxy.ServerProxy")
+    @SidedProxy(clientSide = "com.t3ctonic.mysicenergies.proxy.ClientProxy", serverSide = "com.t3ctonic.mysicenergies.proxy.ServerProxy")
     public static ServerProxy proxy;
 
     /** Stuff */

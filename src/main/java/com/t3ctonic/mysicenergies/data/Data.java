@@ -1,6 +1,10 @@
 package com.t3ctonic.mysicenergies.data;
 
-public class Data
+import com.t3ctonic.mysicenergies.Util;
+import com.t3ctonic.mysicenergies.data.entity.EntityDarkEnergyGolem;
+import com.t3ctonic.mysicenergies.data.entity.render.RenderDarkEnergyGolem;
+
+public class Data extends Util
 {
     public void init()
     {
@@ -14,7 +18,7 @@ public class Data
 
         }
         { /** Entities */
-
+            addEntity(EntityDarkEnergyGolem.class, "darkEnergyGolem", new RenderDarkEnergyGolem(), 0, 0);
         }
     }
 }
