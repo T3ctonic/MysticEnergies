@@ -5,6 +5,7 @@ import com.t3ctonic.mysicenergies.data.block.BlockDarkEntityOre;
 import com.t3ctonic.mysicenergies.data.creatvetab.TabMystic;
 import com.t3ctonic.mysicenergies.data.entity.EntityDarkEnergyGolem;
 import com.t3ctonic.mysicenergies.data.entity.render.RenderDarkEnergyGolem;
+import com.t3ctonic.mysicenergies.data.item.ItemDarkEnergy;
 
 public class Data extends Util
 {
@@ -17,6 +18,7 @@ public class Data extends Util
             addBlock(0, new BlockDarkEntityOre());
         }
         { /** Items */ //addItem(int id, Item item)
+            addItem(0, new ItemDarkEnergy());
 
         }
         { /** Entities */ //addEntity(Class entityclass, String name, Render entityRender, int color, int color)
