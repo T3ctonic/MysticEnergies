@@ -18,7 +18,7 @@ public class Data extends Util
             addBlock(0, new BlockDarkEntityOre());
         }
         { /** Items */ //addItem(int id, Item item)
-            addItem(0, new ItemDarkEnergy());
+            addItem(0, new ItemDarkEnergy(0));
 
         }
         { /** Entities */ //addEntity(Class entityclass, String name, Render entityRender, int color, int color)

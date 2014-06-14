@@ -6,7 +6,7 @@ public class ItemDarkEnergy extends Item {
     public ItemDarkEnergy(int par1)
     {
         super(par1);
-        this.setCreativeTab(TabMystic.TabMysticEnergies);
+        this.setCreativeTab(mysticenergies.TabMysticEnergies);
     }
 
     public void registerIcons(IconRegister iconRegister)
