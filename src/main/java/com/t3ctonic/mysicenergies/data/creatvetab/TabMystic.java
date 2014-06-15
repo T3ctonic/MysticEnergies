@@ -1,7 +1,7 @@
 package com.t3ctonic.mysicenergies.data.creatvetab;
 
+import com.t3ctonic.mysicenergies.Util;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 public class TabMystic extends CreativeTabs
@@ -13,6 +13,6 @@ public class TabMystic extends CreativeTabs
 
     public Item getTabIconItem()
     {
-        return Items.glowstone_dust;
+        return Util.getItem(0);
     }
 }
