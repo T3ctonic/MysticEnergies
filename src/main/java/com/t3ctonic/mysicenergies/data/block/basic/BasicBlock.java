@@ -9,8 +9,8 @@ public class BasicBlock extends Block
     public BasicBlock(String name, Material material)
     {
         super(material);
-        setBlockName("darkEnergyOre");
-        setBlockTextureName(Util.getModId() + "darkEnergyOre");
+        setBlockName(name);
+        setBlockTextureName(Util.getModId() + name);
         setCreativeTab(Util.getCreativeTab(0));
         setHardness(15f);
         setResistance(100);

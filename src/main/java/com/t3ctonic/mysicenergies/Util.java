@@ -18,6 +18,7 @@ import net.minecraft.entity.EntityLiving;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.common.util.EnumHelper;
 
@@ -35,6 +36,7 @@ public class Util
     private static final Block[] blocks = new Block[512];
     private static final Item.ToolMaterial[] toolMaterials = new Item.ToolMaterial[512];
     private static final ItemArmor.ArmorMaterial[] armorMaterials = new ItemArmor.ArmorMaterial[512];
+    private static final BiomeGenBase[] biomes = new BiomeGenBase[512];
     private static final Object[] objects = new Object[4];
     private static final Class[] classes = new Class[2];
 
@@ -113,6 +115,11 @@ public class Util
         if (id != -1) armorMaterials[id] = EnumHelper.addArmorMaterial(name, durability, reductionAmounts, enchantability);
     }
 
+    public void addBiome(int id, BiomeGenBase biome)
+    {
+        if (id != -1) biomes[id] = biome;
+    }
+
     /** Getters */
     public static String getModId()
     {
@@ -152,6 +159,11 @@ public class Util
     public static ItemArmor.ArmorMaterial getArmorMaterial(int id)
     {
         return armorMaterials[id];
+    }
+
+    public static BiomeGenBase getBiome(int id)
+    {
+        return biomes[id];
     }
 
     public static Object[] getObjects()

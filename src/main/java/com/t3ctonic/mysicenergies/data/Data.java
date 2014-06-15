@@ -9,6 +9,7 @@ import com.t3ctonic.mysicenergies.data.entity.render.RenderDarkEnergyGolem;
 import com.t3ctonic.mysicenergies.data.item.ItemEnergyBrick;
 import com.t3ctonic.mysicenergies.data.item.basic.BasicItem;
 import com.t3ctonic.mysicenergies.data.item.tool.*;
+import com.t3ctonic.mysicenergies.data.world.biome.BiomeFallenDarkEnd;
 import com.t3ctonic.mysicenergies.data.world.gen.WorldGenDarkEnergyOre;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -49,6 +50,9 @@ public class Data extends Util
         }
         { /** World Generation */
             addWorldGenerator(new WorldGenDarkEnergyOre(), 1);
+        }
+        { /** Biomes */
+            addBiome(0, new BiomeFallenDarkEnd());
         }
     }
 
