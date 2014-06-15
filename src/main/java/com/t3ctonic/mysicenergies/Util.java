@@ -20,6 +20,8 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.client.IItemRenderer;
+import net.minecraftforge.common.BiomeDictionary;
+import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class Util
@@ -118,6 +120,8 @@ public class Util
     public void addBiome(int id, BiomeGenBase biome)
     {
         if (id != -1) biomes[id] = biome;
+        BiomeDictionary.registerBiomeType(biome, BiomeDictionary.Type.FOREST);
+        BiomeManager.addSpawnBiome(biome);
     }
 
     /** Getters */
