@@ -2,6 +2,7 @@ package com.t3ctonic.mysicenergies;
 
 import com.t3ctonic.mysicenergies.data.Data;
 import com.t3ctonic.mysicenergies.proxy.ServerProxy;
+import cpw.mods.fml.common.IWorldGenerator;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -76,6 +77,11 @@ public class Util
         objects[2] = item;
         objects[3] = renderer;
         proxy.renderItem();
+    }
+
+    public void addWorldGenerator(IWorldGenerator generator, int population)
+    {
+        GameRegistry.registerWorldGenerator(generator, population);
     }
 
     /** Getters */
