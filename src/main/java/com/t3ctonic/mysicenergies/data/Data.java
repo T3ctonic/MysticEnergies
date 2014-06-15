@@ -2,18 +2,17 @@ package com.t3ctonic.mysicenergies.data;
 
 import com.t3ctonic.mysicenergies.Util;
 import com.t3ctonic.mysicenergies.data.block.BlockDarkEnergyOre;
-import com.t3ctonic.mysicenergies.data.block.BlockDyingEarth;
-import com.t3ctonic.mysicenergies.data.block.BlockPureEnergy;
+import com.t3ctonic.mysicenergies.data.block.basic.BasicBlock;
 import com.t3ctonic.mysicenergies.data.creatvetab.TabMystic;
 import com.t3ctonic.mysicenergies.data.entity.EntityDarkEnergyGolem;
 import com.t3ctonic.mysicenergies.data.entity.render.RenderDarkEnergyGolem;
-import com.t3ctonic.mysicenergies.data.item.BasicFood;
-import com.t3ctonic.mysicenergies.data.item.BasicItem;
 import com.t3ctonic.mysicenergies.data.item.ItemEnergyBrick;
+import com.t3ctonic.mysicenergies.data.item.basic.BasicItem;
 import com.t3ctonic.mysicenergies.data.item.tool.*;
 import com.t3ctonic.mysicenergies.data.world.gen.WorldGenDarkEnergyOre;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.material.Material;
 
 public class Data extends Util
 {
@@ -24,8 +23,8 @@ public class Data extends Util
         }
         { /** Blocks */
             addBlock(0, new BlockDarkEnergyOre());
-            addBlock(1, new BlockPureEnergy());
-            addBlock(2, new BlockDyingEarth());
+            addBlock(1, new BasicBlock("pureEnergyBlock", Material.iron));
+            addBlock(2, new BasicBlock("dyingEarth", Material.rock));
         }
         { /** Materials */
             addToolMaterial(0, "PUREENERGY", 3, 5000, 50.0F, 40.0F, 60);
