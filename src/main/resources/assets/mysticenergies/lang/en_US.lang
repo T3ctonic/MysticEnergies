@@ -1,0 +1,28 @@
+itemGroup.mysticTab=MysticEnergies
+
+tile.darkEnergyOre.name=Dark Energy Ore
+tile.pureEnergyBlock.name=Pure Energy Block
+
+item.darkEnergy.name=Dark Energy
+item.pureEnergy.name=Pure Energy
+item.liteEnergy.name=Lite Energy
+
+item.darkEnergyHoe.name=Dark Energy Hoe
+item.darkEnergyPickaxe=Dark Energy Pickaxe
+item.darkEnergyShovel.name=Dark Energy Shovel
+item.darkEnergySword.name=Dark Energy Sword
+item.darkEnergyAxe.name=Dark Energy Axe
+
+item.pureEnergyHoe.name=Pure Energy Hoe
+item.pureEnergyPickaxe=Pure Energy Pickaxe
+item.pureEnergyShovel.name=Pure Energy Shovel
+item.pureEnergySword.name=Pure Energy Sword
+item.pureEnergyAxe.name=Pure Energy Axe
+
+item.liteEnergyHoe.name=Lite Energy Hoe
+item.liteEnergyPickaxe=Lite Energy Pickaxe
+item.liteEnergyShovel.name=Lite Energy Shovel
+item.liteEnergySword.name=Lite Energy Sword
+item.liteEnergyAxe.name=Lite Energy Axe
+
+item.energyBrick.name=Energy Brick
