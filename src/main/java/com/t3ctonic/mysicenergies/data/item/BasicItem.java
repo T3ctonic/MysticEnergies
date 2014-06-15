@@ -3,12 +3,12 @@ package com.t3ctonic.mysicenergies.data.item;
 import com.t3ctonic.mysicenergies.Util;
 import net.minecraft.item.Item;
 
-public class ItemPureEnergy extends Item
+public class BasicItem extends Item
 {
-    public ItemPureEnergy()
+    public BasicItem(String name)
     {
-        setUnlocalizedName("pureEnergy");
-        setTextureName(Util.getModId() + "pureEnergy");
+        setUnlocalizedName(name);
+        setTextureName(Util.getModId() + name);
         setCreativeTab(Util.getCreativeTab(0));
     }
 }

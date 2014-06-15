@@ -1,6 +1,7 @@
 package com.t3ctonic.mysicenergies;
 
 import com.t3ctonic.mysicenergies.data.Data;
+import com.t3ctonic.mysicenergies.data.Energies;
 import com.t3ctonic.mysicenergies.proxy.ServerProxy;
 import cpw.mods.fml.common.IWorldGenerator;
 import cpw.mods.fml.common.SidedProxy;
@@ -26,6 +27,7 @@ public class Util
 
     /** Stuff */
     private static final Data data = new Data();
+    private static final Energies energies = new Energies();
     private static final CreativeTabs[] creativeTabs = new CreativeTabs[512];
     private static final Item[] items = new Item[512];
     private static final Block[] blocks = new Block[512];
@@ -107,6 +109,11 @@ public class Util
     public static Data getData()
     {
         return data;
+    }
+
+    public static String[] getEnergies()
+    {
+        return energies.energies;
     }
 
     public static CreativeTabs getCreativeTab(int id)
