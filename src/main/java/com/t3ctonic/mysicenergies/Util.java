@@ -7,6 +7,8 @@ import cpw.mods.fml.common.IWorldGenerator;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.client.renderer.entity.RenderLiving;
@@ -60,7 +62,8 @@ public class Util
         if (registerTile) GameRegistry.registerTileEntity(tile, tile.getSimpleName());
     }
 
-    public void addEntity(Class<? extends EntityLiving> entity, String name, RenderLiving renderer, int color1, int color2)
+    @SideOnly(Side.CLIENT)
+    public void addClientEntity(Class<? extends EntityLiving> entity, String name, RenderLiving renderer, int color1, int color2)
     {
         int entityId = EntityRegistry.findGlobalUniqueEntityId();
         EntityRegistry.registerGlobalEntityID(entity, name, entityId, color1, color2);
@@ -71,6 +74,15 @@ public class Util
         proxy.renderEntity();
     }
 
+    @SideOnly(Side.SERVER)
+    public void addServerEntity(Class<? extends EntityLiving> entity, String name, int color1, int color2)
+    {
+        int entityId = EntityRegistry.findGlobalUniqueEntityId();
+        EntityRegistry.registerGlobalEntityID(entity, name, entityId, color1, color2);
+        EntityRegistry.registerModEntity(entity, name, entityId, MysticEnergies.instance, 64, 1, true);
+    }
+
+    @SideOnly(Side.CLIENT)
     public void addBlockRenderer(Class<? extends TileEntity> tile, TileEntitySpecialRenderer renderer)
     {
         classes[1] = tile;
@@ -78,6 +90,7 @@ public class Util
         proxy.renderTileEntity();
     }
 
+    @SideOnly(Side.CLIENT)
     public void addItemRenderer(Item item, IItemRenderer renderer)
     {
         objects[2] = item;

@@ -1,5 +1,6 @@
 package com.t3ctonic.mysicenergies.data.entity;
 
+import com.t3ctonic.mysicenergies.Util;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.world.EnumDifficulty;
@@ -49,7 +50,7 @@ public class EntityDarkEnergyGolem extends EntityMob
         switch (rand.nextInt(3))
         {
             case 0:
-                //dropItem(MysticEnergies.DarkEnergy, 1); todo
+                dropItem(Util.getItem(1), 1);
                 break;
         }
     }

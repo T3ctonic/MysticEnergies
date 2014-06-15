@@ -9,6 +9,8 @@ import com.t3ctonic.mysicenergies.data.entity.render.RenderDarkEnergyGolem;
 import com.t3ctonic.mysicenergies.data.item.BasicItem;
 import com.t3ctonic.mysicenergies.data.item.tool.*;
 import com.t3ctonic.mysicenergies.data.world.gen.WorldGenDarkEnergyOre;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class Data extends Util
 {
@@ -30,23 +32,42 @@ public class Data extends Util
 
         }
         { /** Energies */
-            int toolID = 0;
+            int id = 0;
             for (String energy : getEnergies())
             {
-                addItem(-1, new BasicItem(energy));
-                addItem(-1, new ItemAxe(toolID, energy));
-                addItem(-1, new ItemHoe(toolID, energy));
-                addItem(-1, new ItemPickaxe(toolID, energy));
-                addItem(-1, new ItemShovel(toolID, energy));
-                addItem(-1, new ItemSword(toolID, energy));
-                toolID++;
+                addItem(id, new BasicItem(energy));
+                addItem(-1, new ItemAxe(id, energy));
+                addItem(-1, new ItemHoe(id, energy));
+                addItem(-1, new ItemPickaxe(id, energy));
+                addItem(-1, new ItemShovel(id, energy));
+                addItem(-1, new ItemSword(id, energy));
+                id++;
             }
-        }
-        { /** Entities */
-            addEntity(EntityDarkEnergyGolem.class, "darkEnergyGolem", new RenderDarkEnergyGolem(), 0, 0);
         }
         { /** World Generation */
             addWorldGenerator(new WorldGenDarkEnergyOre(), 1);
+        }
+    }
+
+    @SideOnly(Side.SERVER)
+    public void initServer()
+    {
+        { /** Entities */
+            addServerEntity(EntityDarkEnergyGolem.class, "darkEnergyGolem", 0, 0);
+        }
+    }
+
+    @SideOnly(Side.CLIENT)
+    public void initClient()
+    {
+        { /** Entities */
+            addClientEntity(EntityDarkEnergyGolem.class, "darkEnergyGolem", new RenderDarkEnergyGolem(), 0, 0);
+        }
+        { /** Block Renderers */
+
+        }
+        { /** Item Renderers */
+
         }
     }
 }
