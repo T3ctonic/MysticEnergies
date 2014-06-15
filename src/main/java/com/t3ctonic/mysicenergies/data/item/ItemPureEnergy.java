@@ -3,13 +3,12 @@ package com.t3ctonic.mysicenergies.data.item;
 import com.t3ctonic.mysicenergies.Util;
 import net.minecraft.item.Item;
 
-public class ItemDarkEnergy extends Item
+public class ItemPureEnergy extends Item
 {
-    public ItemDarkEnergy()
+    public ItemPureEnergy()
     {
-        setUnlocalizedName("darkEnergy");
-        setTextureName(Util.getModId() + "darkEnergy");
+        setUnlocalizedName("pureEnergy");
+        setTextureName(Util.getModId() + "pureEnergy");
         setCreativeTab(Util.getCreativeTab(0));
     }
 }
-

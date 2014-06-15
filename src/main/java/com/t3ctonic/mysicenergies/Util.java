@@ -13,8 +13,10 @@ import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.client.IItemRenderer;
+import net.minecraftforge.common.util.EnumHelper;
 
 public class Util
 {
@@ -27,6 +29,8 @@ public class Util
     private static final CreativeTabs[] creativeTabs = new CreativeTabs[512];
     private static final Item[] items = new Item[512];
     private static final Block[] blocks = new Block[512];
+    private static final Item.ToolMaterial[] toolMaterials = new Item.ToolMaterial[512];
+    private static final ItemArmor.ArmorMaterial[] armorMaterials = new ItemArmor.ArmorMaterial[512];
     private static final Object[] objects = new Object[4];
     private static final Class[] classes = new Class[2];
 
@@ -84,6 +88,16 @@ public class Util
         GameRegistry.registerWorldGenerator(generator, population);
     }
 
+    public void addToolMaterial(int id, String name, int harvestLevel, int maxUses, float efficiency, float damage, int enchantability)
+    {
+        if (id != -1) toolMaterials[id] = EnumHelper.addToolMaterial(name, harvestLevel, maxUses, efficiency, damage, enchantability);
+    }
+
+    public void addArmorMaterial(int id, String name, int durability, int[] reductionAmounts, int enchantability)
+    {
+        if (id != -1) armorMaterials[id] = EnumHelper.addArmorMaterial(name, durability, reductionAmounts, enchantability);
+    }
+
     /** Getters */
     public static String getModId()
     {
@@ -108,6 +122,16 @@ public class Util
     public static Item getItem(int id)
     {
         return items[id];
+    }
+
+    public static Item.ToolMaterial getToolMaterial(int id)
+    {
+        return toolMaterials[id];
+    }
+
+    public static ItemArmor.ArmorMaterial getArmorMaterial(int id)
+    {
+        return armorMaterials[id];
     }
 
     public static Object[] getObjects()
