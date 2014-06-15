@@ -28,9 +28,6 @@ public class Data extends Util
             addToolMaterial(1, "DARKENERGY", 2, 2000, 15.0F, 20.0F, 30);
             addToolMaterial(2, "LITEENERGY", 2, 2000, 15.0F, 20.0F, 30);
         }
-        { /** Items */
-
-        }
         { /** Energies */
             int id = 0;
             for (String energy : getEnergies())
@@ -43,6 +40,9 @@ public class Data extends Util
                 addItem(-1, new ItemSword(id, energy));
                 id++;
             }
+        }
+        { /** Items */
+            addItem(3, new BasicItem("energyBrick"));
         }
         { /** World Generation */
             addWorldGenerator(new WorldGenDarkEnergyOre(), 1);
