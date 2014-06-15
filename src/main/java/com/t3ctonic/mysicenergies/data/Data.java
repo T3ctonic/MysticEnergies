@@ -6,6 +6,7 @@ import com.t3ctonic.mysicenergies.data.block.BlockPureEnergy;
 import com.t3ctonic.mysicenergies.data.creatvetab.TabMystic;
 import com.t3ctonic.mysicenergies.data.entity.EntityDarkEnergyGolem;
 import com.t3ctonic.mysicenergies.data.entity.render.RenderDarkEnergyGolem;
+import com.t3ctonic.mysicenergies.data.item.BasicFood;
 import com.t3ctonic.mysicenergies.data.item.BasicItem;
 import com.t3ctonic.mysicenergies.data.item.tool.*;
 import com.t3ctonic.mysicenergies.data.world.gen.WorldGenDarkEnergyOre;
@@ -42,7 +43,7 @@ public class Data extends Util
             }
         }
         { /** Items */
-            addItem(3, new BasicItem("energyBrick"));
+            addItem(3, new BasicFood("energyBrick", 12, 20, false));
         }
         { /** World Generation */
             addWorldGenerator(new WorldGenDarkEnergyOre(), 1);
