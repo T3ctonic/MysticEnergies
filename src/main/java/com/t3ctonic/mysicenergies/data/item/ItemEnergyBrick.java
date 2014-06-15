@@ -1,5 +1,6 @@
 package com.t3ctonic.mysicenergies.data.item;
 
+import com.t3ctonic.mysicenergies.data.item.basic.BasicFood;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemStack;

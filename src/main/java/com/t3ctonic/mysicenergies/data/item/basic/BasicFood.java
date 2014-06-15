@@ -1,4 +1,4 @@
-package com.t3ctonic.mysicenergies.data.item;
+package com.t3ctonic.mysicenergies.data.item.basic;
 
 import com.t3ctonic.mysicenergies.Util;
 import net.minecraft.item.ItemFood;
