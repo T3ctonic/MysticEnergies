@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mysticenergies",
+  "name": "Mystic Energies",
+  "description": "A mod of forgotten power",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["T3ctonic"],
+  "credits": "T3ctonic",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
