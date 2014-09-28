@@ -2734,3 +2734,6 @@ java.lang.NullPointerException
 [23:52:31] [Client thread/INFO] [FML/]: [Client thread] Client side modded connection established
 [23:52:31] [Server thread/INFO] [FML/]: [Server thread] Server side modded connection established
 [23:53:16] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save New World
+[23:54:01] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save New World
+[23:54:46] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save New World
+[23:55:31] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save New World
