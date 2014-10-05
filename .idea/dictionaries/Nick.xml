@@ -2,6 +2,8 @@
   <dictionary name="Nick">
     <words>
       <w>ctonic</w>
+      <w>modid</w>
+      <w>modname</w>
       <w>mysticenergies</w>
     </words>
   </dictionary>

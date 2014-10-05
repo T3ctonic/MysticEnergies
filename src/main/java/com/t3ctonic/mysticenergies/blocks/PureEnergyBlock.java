@@ -10,7 +10,8 @@ public class PureEnergyBlock extends Block {
 
     private String name = "pureEnergyBlock";
 
-    public PureEnergyBlock(){
+    public PureEnergyBlock()
+    {
 
         super(Material.rock);
         this.setCreativeTab(CreativeTabs.tabBlock);
