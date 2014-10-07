@@ -40,8 +40,8 @@
       <file leaf-file-name="ModItems.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/t3ctonic/mysticenergies/items/ModItems.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.036996737" vertical-offset="0" max-vertical-offset="919">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.073993474" vertical-offset="0" max-vertical-offset="919">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1100,7 +1100,11 @@
       <created>1412473357111</created>
       <updated>1412473357111</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Started on Items">
+      <created>1412535578835</created>
+      <updated>1412535578835</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1151,7 +1155,8 @@
     <MESSAGE value="Re-do" />
     <MESSAGE value="Update" />
     <MESSAGE value="Added name stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added name stuff" />
+    <MESSAGE value="Started on Items" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started on Items" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1215,8 +1220,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/t3ctonic/mysticenergies/items/ModItems.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.036996737" vertical-offset="0" max-vertical-offset="919">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.073993474" vertical-offset="0" max-vertical-offset="919">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
