@@ -50,9 +50,11 @@
       <file leaf-file-name="PureEnergy.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/t3ctonic/mysticenergies/items/PureEnergy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.073993474" vertical-offset="0" max-vertical-offset="919">
-              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-              <folding />
+            <state vertical-scroll-proportion="0.35146898" vertical-offset="0" max-vertical-offset="919">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1022,7 +1024,11 @@
       <created>1413491134358</created>
       <updated>1413491134358</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Started on Items">
+      <created>1413491774595</created>
+      <updated>1413491774595</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1270,9 +1276,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/t3ctonic/mysticenergies/items/PureEnergy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.073993474" vertical-offset="0" max-vertical-offset="919">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding />
+        <state vertical-scroll-proportion="0.35146898" vertical-offset="0" max-vertical-offset="919">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
