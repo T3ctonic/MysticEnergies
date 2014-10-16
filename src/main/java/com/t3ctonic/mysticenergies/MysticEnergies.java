@@ -1,6 +1,7 @@
 package com.t3ctonic.mysticenergies;
 
 import com.t3ctonic.mysticenergies.blocks.ModBlocks;
+import com.t3ctonic.mysticenergies.items.ModItems;
 import com.t3ctonic.mysticenergies.lib.Constants;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -14,8 +15,8 @@ public class MysticEnergies {
     public void preInit(FMLPreInitializationEvent event){
 
 
-
         ModBlocks.init();
+        ModItems.init();
     }
 
     @Mod.EventHandler
