@@ -7,6 +7,8 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.ItemStack;
 
 @Mod(modid = Constants.MODID, name = Constants.MODNAME, version = Constants.VERSION)
 public class MysticEnergies {
@@ -21,6 +23,15 @@ public class MysticEnergies {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
+
+       //Recipes
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.pureEnergyBlock),
+                "XXX",
+                "XXX",
+                "XXX",
+                'X' = ModItems.pureEnergy
+        );
+
 
     }
 

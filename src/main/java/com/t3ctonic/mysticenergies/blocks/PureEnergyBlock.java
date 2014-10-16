@@ -16,6 +16,7 @@ public class PureEnergyBlock extends Block {
         super(Material.rock);
         this.setCreativeTab(CreativeTabs.tabBlock);
         this.setBlockName(Constants.MODID + "_" + name);
+        this.setBlockTextureName(Constants.MODID + ":" + name);
         GameRegistry.registerBlock(this, name);
         this.setHardness(15);
         this.setResistance(100);
