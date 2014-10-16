@@ -25,12 +25,13 @@ public class MysticEnergies {
     public void init(FMLInitializationEvent event){
 
        //Recipes
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.pureEnergyBlock),
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.pureEnergyBlock), new Object[]{
                 "XXX",
                 "XXX",
                 "XXX",
-                'X' = ModItems.pureEnergy
-        );
+                'X', ModItems.pureEnergy
+
+        } );
 
 
     }
