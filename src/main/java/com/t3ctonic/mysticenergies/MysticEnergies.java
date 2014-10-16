@@ -33,6 +33,15 @@ public class MysticEnergies {
 
         } );
 
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.darkEnergyBlock), new Object []{
+                "XXX",
+                "XXX",
+                "XXX",
+                'X', ModItems.darkEnergy
+
+
+        });
+
 
     }
 
