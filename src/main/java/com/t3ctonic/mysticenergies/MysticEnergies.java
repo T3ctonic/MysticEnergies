@@ -9,10 +9,17 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.util.EnumHelper;
 
 @Mod(modid = Constants.MODID, name = Constants.MODNAME, version = Constants.VERSION)
 public class MysticEnergies {
+
+
+    public static Item.ToolMaterial toolPureEnergy = EnumHelper.addToolMaterial("PUREENERGY", 3, 5000, 50.0F, 40.0F, 60);
+    public static Item.ToolMaterial toolDarkEnergy = EnumHelper.addToolMaterial("DARKENERGY", 2, 2000, 15.0F, 20.0F, 30);
+    public static Item.ToolMaterial toolLiteEnergy = EnumHelper.addToolMaterial("LITEENERGY", 2, 2000, 15.0F, 20.0F, 30);
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event){
