@@ -1,0 +1,13 @@
+idea/
+.idea/
+gradle/
+.gradle/
+out/
+build/
+minecraft/
+
+*.iml
+*.ipr
+*.iws
+*.txt
+*.bat
