@@ -6,7 +6,7 @@ import net.minecraft.item.Item;
 
 public class PlaceHolder extends Item{
 
-    private String name = "placeholdey"; //<--- Intentional
+    private String name = "mr. placeholdey"; //<--- Intentional
 
     public PlaceHolder() {
 

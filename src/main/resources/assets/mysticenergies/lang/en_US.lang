@@ -1,9 +1,10 @@
 tile.mysticenergies_pureEnergyBlock.name=Pure Energy Block
 tile.mysticenergies_darkEnergyBlock.name=Dark Energy Block
 tile.mysticenergies_liteEnergyBlock.name=Lite Energy Block
+:)
 
 
-
+itemGroup.mysticenergies.tab=Mystic Energies
 
 
 item.mysticenergies_pureEnergy.name=Pure Energy
