@@ -1,0 +1,11 @@
+tile.mysticenergies_pureEnergyBlock.name=Pure Energy Block
+tile.mysticenergies_darkEnergyBlock.name=Dark Energy Block
+tile.mysticenergies_liteEnergyBlock.name=Lite Energy Block
+
+
+
+
+
+item.mysticenergies_pureEnergy.name=Pure Energy
+item.mysticenergies_darkEnergy.name=Dark Energy
+item.mysticenergies_liteEnergy.name=Lite Energy
