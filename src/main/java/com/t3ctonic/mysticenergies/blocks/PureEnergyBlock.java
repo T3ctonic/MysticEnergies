@@ -1,10 +1,10 @@
 package com.t3ctonic.mysticenergies.blocks;
 
+import com.t3ctonic.mysticenergies.creativetab.ModCreativeTabs;
 import com.t3ctonic.mysticenergies.lib.Constants;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 
 public class PureEnergyBlock extends Block {
 
@@ -14,7 +14,7 @@ public class PureEnergyBlock extends Block {
     {
 
         super(Material.rock);
-        this.setCreativeTab(CreativeTabs.tabBlock);
+        this.setCreativeTab(ModCreativeTabs.tab);
         this.setBlockName(Constants.MODID + "_" + name);
         this.setBlockTextureName(Constants.MODID + ":" + name);
         GameRegistry.registerBlock(this, name);

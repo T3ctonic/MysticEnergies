@@ -1,20 +1,19 @@
 package com.t3ctonic.mysticenergies.items;
 
-import com.t3ctonic.mysticenergies.creativetab.ModCreativeTabs;
 import com.t3ctonic.mysticenergies.lib.Constants;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
-public class PureEnergy extends Item{
+public class PlaceHolder extends Item{
 
-    private String name = "pureEnergy";
+    private String name = "placeholdey"; //<--- Intentional
 
-    public PureEnergy() {
+    public PlaceHolder() {
 
         setUnlocalizedName(Constants.MODID + "_" + name);
-        this.setTextureName(Constants.MODID + ":" + name);
+        this.setTextureName(Constants.MODID + ":" + "pureEnergy");
         GameRegistry.registerItem(this, name);
-        setCreativeTab(ModCreativeTabs.tab);
+        setCreativeTab(null);
 
     }
 }
