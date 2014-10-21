@@ -23,7 +23,18 @@ archivesBaseName = "MysticEnergies"
 
 minecraft {
     version = "1.7.10-10.13.2.1230"
-    assetDir = "minecraft"
+    runDir = "minecraft"
+}
+
+repositories {
+    maven {
+        name = "ilexiconn"
+        url = "http://ilexiconn.uk.to/maven/"
+    }
+}
+
+dependencies {
+    compile 'llib:LLib:1.7.10-0.1.1-26:dev'
 }
 
 processResources
