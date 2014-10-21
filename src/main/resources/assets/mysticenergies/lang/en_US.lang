@@ -1,7 +1,8 @@
 tile.mysticenergies_pureEnergyBlock.name=Pure Energy Block
 tile.mysticenergies_darkEnergyBlock.name=Dark Energy Block
 tile.mysticenergies_liteEnergyBlock.name=Lite Energy Block
-:)
+
+
 
 
 itemGroup.mysticenergies.tab=Mystic Energies
@@ -10,3 +11,14 @@ itemGroup.mysticenergies.tab=Mystic Energies
 item.mysticenergies_pureEnergy.name=Pure Energy
 item.mysticenergies_darkEnergy.name=Dark Energy
 item.mysticenergies_liteEnergy.name=Lite Energy
+
+
+
+
+
+
+item.mysticenergies_pureEnergyPickaxe.name=Pure Energy Pickaxe
+item.mysticenergies_pureEnergySword.name=Pure Energy Sword
+item.mysticenergies_pureEnergyAxe.name=Pure Energy Axe
+item.mysticenergies_pureEnergyShovel.name=Pure Energy Shovel
+
