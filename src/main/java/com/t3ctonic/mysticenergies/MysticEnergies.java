@@ -40,6 +40,14 @@ public class MysticEnergies {
 
         } );
 
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.liteEnergyBlock), new Object[]{
+                "XXX",
+                "XXX",
+                "XXX",
+                'X', ModItems.liteEnergy
+
+        } );
+
         GameRegistry.addRecipe(new ItemStack(ModBlocks.darkEnergyBlock), new Object []{
                 "XXX",
                 "XXX",
@@ -47,13 +55,6 @@ public class MysticEnergies {
                 'X', ModItems.darkEnergy
 
 
-        });
-
-        GameRegistry.addRecipe(new ItemStack(ModItems.pureEnergy), new Object []{
-                "XXX",
-                "XIY",
-                "YYY",
-                'X', ModItems.darkEnergy, 'I', Items.diamond, 'Y', ModItems.liteEnergy
         });
 
         GameRegistry.addRecipe(new ItemStack(ModItems.pureEnergyPickaxe, 1), new Object[]{
@@ -109,49 +110,76 @@ public class MysticEnergies {
         });
 
         GameRegistry.addRecipe(new ItemStack(ModItems.pureEnergy, 3), new Object[]{
-                "**X", "*DX", "*XX", 'X', ModItems.darkEnergy, '*', ModItems.liteEnergy, 'D', Items.diamond
+                "**X",
+                "*DX",
+                "*XX",
+                'X', ModItems.darkEnergy, '*', ModItems.liteEnergy, 'D', Items.diamond
 
         });
 
         GameRegistry.addRecipe(new ItemStack(ModItems.pureEnergy, 3), new Object[]{
-                "*XX", "*DX", "**X", 'X', ModItems.darkEnergy, '*', ModItems.liteEnergy, 'D', Items.diamond
+                "*XX",
+                "*DX",
+                "**X",
+                'X', ModItems.darkEnergy, '*', ModItems.liteEnergy, 'D', Items.diamond
 
         });
 
         GameRegistry.addRecipe(new ItemStack(ModBlocks.pureEnergyBlock, 1), "XXX", "XXX", "XXX", 'X', ModItems.pureEnergy);
 
         GameRegistry.addRecipe(new ItemStack(ModItems.darkEnergyPickaxe, 1), new Object[]{
-                "***", " X ", " X ", 'X', Items.stick, '*', ModItems.darkEnergy
+                "***",
+                " X ",
+                " X ",
+                'X', Items.stick, '*', ModItems.darkEnergy
 
         });
 
         GameRegistry.addRecipe(new ItemStack(ModItems.darkEnergySword, 1), new Object[]{
-                " * ", " * ", " X ", 'X', Items.stick, '*', ModItems.darkEnergy
+                " * ",
+                " * ",
+                " X ",
+                'X', Items.stick, '*', ModItems.darkEnergy
 
         });
 
         GameRegistry.addRecipe(new ItemStack(ModItems.darkEnergyShovel, 1), new Object[]{
-                " * ", " X ", " X ", 'X', Items.stick, '*', ModItems.darkEnergy
+                " * ",
+                " X ",
+                " X ",
+                'X', Items.stick, '*', ModItems.darkEnergy
 
         });
 
         GameRegistry.addRecipe(new ItemStack(ModItems.darkEnergyAxe, 1), new Object[]{
-                "** ", "*X ", " X ", 'X', Items.stick, '*', ModItems.darkEnergy
+                "** ",
+                "*X ",
+                " X ",
+                'X', Items.stick, '*', ModItems.darkEnergy
 
         });
 
         GameRegistry.addRecipe(new ItemStack(ModItems.darkEnergyHoe, 1), new Object[]{
-                "** ", " X ", " X ", 'X', Items.stick, '*', ModItems.darkEnergy
+                "** ",
+                " X ",
+                " X ",
+                'X', Items.stick, '*', ModItems.darkEnergy
 
         });
 
         GameRegistry.addRecipe(new ItemStack(ModItems.liteEnergyPickaxe, 1), new Object[]{
-                "***", " X ", " X ", 'X', Items.stick, '*', ModItems.darkEnergy
+                "***",
+                " X ",
+                " X ",
+                'X', Items.stick, '*', ModItems.darkEnergy
 
         });
 
         GameRegistry.addRecipe(new ItemStack(ModItems.liteEnergySword, 1), new Object[]{
-                " * ", " * ", " X ", 'X', Items.stick, '*', ModItems.liteEnergy
+                " * ",
+                " * ",
+                " X ",
+                'X', Items.stick, '*', ModItems.liteEnergy
 
         });
 
