@@ -21,6 +21,12 @@ public class ModItems {
     public static Item darkEnergyShovel;
     public static Item darkEnergyHoe;
 
+    public static Item liteEnergySword;
+    public static Item liteEnergyPickaxe;
+    public static Item liteEnergyAxe;
+    public static Item liteEnergyShovel;
+    public static Item liteEnergyHoe;
+
     public static void init(){
 
         pureEnergy = new PureEnergy();
@@ -33,11 +39,17 @@ public class ModItems {
         pureEnergyShovel = new PureEnergyShovel();
         pureEnergyHoe = new PureEnergyHoe();
 
-        darkEnergyPickaxe = new DarkEnergyPickaxe();
         darkEnergySword = new DarkEnergySword();
+        darkEnergyPickaxe = new DarkEnergyPickaxe();
         darkEnergyAxe = new DarkEnergyAxe();
         darkEnergyShovel = new DarkEnergyShovel();
         darkEnergyHoe = new DarkEnergyHoe();
+
+        liteEnergySword = new LiteEnergySword();
+        liteEnergyPickaxe = new LiteEnergyPickaxe();
+        liteEnergyAxe = new LiteEnergyAxe();
+        liteEnergyShovel = new LiteEnergyShovel();
+        liteEnergyHoe = new LiteEnergyHoe();
 
 
     }

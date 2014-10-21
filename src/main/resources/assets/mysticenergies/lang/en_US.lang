@@ -21,5 +21,17 @@ item.mysticenergies_pureEnergyPickaxe.name=Pure Energy Pickaxe
 item.mysticenergies_pureEnergySword.name=Pure Energy Sword
 item.mysticenergies_pureEnergyAxe.name=Pure Energy Axe
 item.mysticenergies_pureEnergyShovel.name=Pure Energy Shovel
-item.mysticEnergies_pureEnergyHoe.name=Pure Energy Hoe
+item.mysticenergies_pureEnergyHoe.name=Pure Energy Hoe
+
+item.mysticenergies_darkEnergyPickaxe.name=Dark Energy Pickaxe
+item.mysticenergies_darkEnergySword.name=Dark Energy Sword
+item.mysticenergies_darkEnergyAxe.name=Dark Energy Axe
+item.mysticenergies_darkEnergyShovel.name=Dark Energy Shovel
+item.mysticenergies_darkEnergyHoe.name=Dark Energy Hoe
+
+item.mysticenergies_liteEnergyPickaxe.name=Lite Energy Pickaxe
+item.mysticenergies_liteEnergySword.name=Lite Energy Sword
+item.mysticenergies_liteEnergyAxe.name=Lite Energy Axe
+item.mysticenergies_liteEnergyShovel.name=Lite Energy Shovel
+item.mysticenergies_liteEnergyHoe.name=Lite Energy Hoe
 
