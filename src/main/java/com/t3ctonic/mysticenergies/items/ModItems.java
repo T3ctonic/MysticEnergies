@@ -19,7 +19,7 @@ public class ModItems {
     public static Item darkEnergyPickaxe;
     public static Item darkEnergyAxe;
     public static Item darkEnergyShovel;
-    public static Item darkEnergyHoe
+    public static Item darkEnergyHoe;
 
     public static void init(){
 
