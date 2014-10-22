@@ -1,6 +1,7 @@
 package com.t3ctonic.mysticenergies;
 
 import com.t3ctonic.mysticenergies.blocks.ModBlocks;
+import com.t3ctonic.mysticenergies.container.GuiHandler;
 import com.t3ctonic.mysticenergies.creativetab.ModCreativeTabs;
 import com.t3ctonic.mysticenergies.items.*;
 import com.t3ctonic.mysticenergies.lib.Constants;
@@ -10,12 +11,16 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
 @Mod(modid = Constants.MODID, name = Constants.MODNAME, version = Constants.VERSION)
 public class MysticEnergies {
+
+    @Mod.Instance
+    public static MysticEnergies instance;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event){
@@ -25,6 +30,8 @@ public class MysticEnergies {
         ModArmorMaterials.init();
         ModBlocks.init();
         ModItems.init();
+
+        NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
 
     }
 

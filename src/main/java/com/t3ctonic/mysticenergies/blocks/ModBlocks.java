@@ -8,11 +8,14 @@ public final class ModBlocks {
     public static Block darkEnergyBlock;
     public static Block liteEnergyBlock;
 
+    public static Block energyFurnace;
+
     public static void init(){
 
         pureEnergyBlock = new PureEnergyBlock();
         darkEnergyBlock = new DarkEnergyBlock();
         liteEnergyBlock = new LiteEnergyBlock();
 
+        energyFurnace = new BlockEnergyFurnace();
     }
 }
