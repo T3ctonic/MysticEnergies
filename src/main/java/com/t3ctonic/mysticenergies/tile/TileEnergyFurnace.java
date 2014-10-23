@@ -2,7 +2,10 @@ package com.t3ctonic.mysticenergies.tile;
 
 import net.minecraft.tileentity.TileEntity;
 
-public class TileEnergyFurnace extends TileEntity {
+import static cpw.mods.fml.common.registry.GameRegistry.registerTileEntity;
 
-    //poo
+public class TileEnergyFurnace extends TileEntity {
+    public TileEnergyFurnace() {
+        registerTileEntity(getClass(), "tileEnergyFurnace");
+    }
 }
