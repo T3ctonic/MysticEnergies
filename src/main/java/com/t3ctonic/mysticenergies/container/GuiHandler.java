@@ -10,13 +10,13 @@ import net.minecraft.world.World;
 public class GuiHandler implements IGuiHandler {
     public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         TileEntity tile = world.getTileEntity(x, y, z);
-        if (tile instanceof TileEnergyFurnace) return new ContainerEnergyFurnace();
+        if (tile instanceof TileEnergyFurnace) return new ContainerEnergyFurnace(player.inventory);
         return null;
     }
 
-    public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) { //the lag is real
+    public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         TileEntity tile = world.getTileEntity(x, y, z);
-        if (tile instanceof TileEnergyFurnace) return new GuiEnergyFurnace(new ContainerEnergyFurnace());
+        if (tile instanceof TileEnergyFurnace) return new GuiEnergyFurnace(new ContainerEnergyFurnace(player.inventory), (TileEnergyFurnace) tile);
         return null;
     }
 }
