@@ -8,6 +8,8 @@ public final class ModBlocks {
     public static Block darkEnergyBlock;
     public static Block liteEnergyBlock;
 
+    public static Block dyingEarth;
+
     public static Block energyFurnace;
 
     public static void init(){
@@ -15,6 +17,8 @@ public final class ModBlocks {
         pureEnergyBlock = new PureEnergyBlock();
         darkEnergyBlock = new DarkEnergyBlock();
         liteEnergyBlock = new LiteEnergyBlock();
+
+        dyingEarth = new DyingEarth();
 
         energyFurnace = new BlockEnergyFurnace();
     }
