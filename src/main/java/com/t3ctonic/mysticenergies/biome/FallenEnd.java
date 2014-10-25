@@ -17,8 +17,8 @@ public class FallenEnd extends BiomeGenBase {
         super(id);
         this.spawnableCreatureList.add(new BiomeGenBase.SpawnListEntry(EntityHorse.class, 5, 2, 6));
         this.theBiomeDecorator.grassPerChunk = 10;
-        this.topBlock = Blocks.end_stone;
-        this.fillerBlock = ModBlocks.dyingEarth;
+        this.topBlock = ModBlocks.dyingEarth;
+        this.fillerBlock = Blocks.dirt;
         this.setBiomeName(Constants.MODID + "#" + name);
         this.setHeight(height_FallenEnd);
     }
