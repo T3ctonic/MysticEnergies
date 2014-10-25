@@ -10,13 +10,13 @@ import net.minecraft.world.World;
 public class GuiHandler implements IGuiHandler {
     public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         TileEntity tile = world.getTileEntity(x, y, z);
-        if (tile instanceof TileEnergyFurnace) return new ContainerEnergyFurnace(player.inventory);
+        if (tile instanceof TileEnergyFurnace) return new ContainerEnergyFurnace(player.inventory, (TileEnergyFurnace) tile);
         return null;
     }
 
     public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         TileEntity tile = world.getTileEntity(x, y, z);
-        if (tile instanceof TileEnergyFurnace) return new GuiEnergyFurnace(new ContainerEnergyFurnace(player.inventory), (TileEnergyFurnace) tile);
+        if (tile instanceof TileEnergyFurnace) return new GuiEnergyFurnace(new ContainerEnergyFurnace(player.inventory, (TileEnergyFurnace) tile), (TileEnergyFurnace) tile);
         return null;
     }
 }
