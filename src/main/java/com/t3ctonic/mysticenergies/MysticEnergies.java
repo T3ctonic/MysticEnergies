@@ -1,5 +1,6 @@
 package com.t3ctonic.mysticenergies;
 
+import com.t3ctonic.mysticenergies.biome.ModBiomes;
 import com.t3ctonic.mysticenergies.blocks.ModBlocks;
 import com.t3ctonic.mysticenergies.container.GuiHandler;
 import com.t3ctonic.mysticenergies.creativetab.ModCreativeTabs;
@@ -27,6 +28,7 @@ public class MysticEnergies {
         ModBlocks.init();
         ModItems.init();
         ModTileEntities.init();
+        ModBiomes.init();
 
         NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
     }
