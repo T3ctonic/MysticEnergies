@@ -1,16 +1,17 @@
 package com.t3ctonic.mysticenergies.biome;
 
-import com.t3ctonic.mysticenergies.biome.FallenEnd
+
+import net.minecraft.world.biome.BiomeGenBase;
 
 public final class ModBiomes {
 
-    public static final ModBiomes fallenEnd = new FallenEnd();
+    public static BiomeGenBase fallenEnd;
 
 
 
     public static void init() {
 
-        fallenEnd = new FallenEnd()
+        fallenEnd = new FallenEnd();
 
 
     }

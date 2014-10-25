@@ -12,9 +12,9 @@ public class FallenEnd extends BiomeGenBase {
 
     public static final BiomeGenBase.Height height_FallenEnd = new BiomeGenBase.Height(0.1F, 2F);
 
-    public FallenEnd(int p_i1986_1_) {
+    public FallenEnd(int id) {
 
-        super(p_i1986_1_);
+        super(id);
         this.spawnableCreatureList.add(new BiomeGenBase.SpawnListEntry(EntityHorse.class, 5, 2, 6));
         this.theBiomeDecorator.grassPerChunk = 10;
         this.topBlock = Blocks.grass;
@@ -23,9 +23,5 @@ public class FallenEnd extends BiomeGenBase {
         this.fillerBlock = Blocks.stone;
         this.setBiomeName(Constants.MODID + "#" + name);
         this.setHeight(height_FallenEnd);
-    }
-
-    public FallenEnd() {
-        super();
     }
 }
