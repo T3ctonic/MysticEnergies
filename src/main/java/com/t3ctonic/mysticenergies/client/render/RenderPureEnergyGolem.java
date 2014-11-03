@@ -11,7 +11,7 @@ public class RenderPureEnergyGolem extends RendererLivingEntity {
 
     public RenderPureEnergyGolem() {
         super(new ModelEnergyGolem(), 0.3f);
-        texture = new ResourceLocation(Constants.MODID, "textures/entities/pureEnergyGolem.png");
+        texture = new ResourceLocation(Constants.MODID, "textures/entities/PureEnergyGolem.png");
     }
 
     public ResourceLocation getEntityTexture(Entity p_110775_1_) {
