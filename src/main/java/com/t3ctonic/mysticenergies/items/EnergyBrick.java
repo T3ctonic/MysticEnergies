@@ -42,6 +42,7 @@ public class EnergyBrick extends ItemFood {
             p_77849_3_.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 125, 150));
             p_77849_3_.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 200, 3));
             p_77849_3_.addPotionEffect(new PotionEffect(Potion.nightVision.id, 300, 100));
+            p_77849_3_.addPotionEffect(new PotionEffect(Potion.regeneration.id, 300, 10));
         }
 
     }

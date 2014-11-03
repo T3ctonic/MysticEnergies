@@ -51,7 +51,6 @@ public class EntityLiteEnergyGolem extends EntityMob {
 
         }
     }
-
     @Override
     protected void fall(float distance) {
     }
