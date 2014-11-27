@@ -11,7 +11,7 @@ public class WorldProviderDyingWorld extends WorldProvider{
     @Override
     public void registerWorldChunkManager()
     {
-        worldChunkMgr = new WorldChunkManagerErebus(worldObj);
+        worldChunkMgr = new WorldChunkManagerDyingWorld(worldObj);
         hasNoSky = true;
         dimensionId = ConfigHandler.INSTANCE.erebusDimensionID;
     }
@@ -20,12 +20,6 @@ public class WorldProviderDyingWorld extends WorldProvider{
     public IChunkProvider createChunkGenerator()
     {
         return new ChunkProviderDyingWorld(worldObj, worldObj.getSeed());
-    }
-
-    @Override
-    public boolean isSurfaceWorld()
-    {
-        return false;
     }
 
 
