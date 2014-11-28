@@ -56,6 +56,5 @@ public class EntityPureEnergyGolem extends EntityMob {
     }
 
 
-
     //todo
 }

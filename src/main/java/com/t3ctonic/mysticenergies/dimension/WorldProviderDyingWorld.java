@@ -12,14 +12,6 @@ public class WorldProviderDyingWorld extends WorldProvider{
     public void registerWorldChunkManager()
     {
         worldChunkMgr = new WorldChunkManagerDyingWorld(worldObj);
-        hasNoSky = true;
-        dimensionId = ConfigHandler.INSTANCE.erebusDimensionID;
-    }
-
-    @Override
-    public IChunkProvider createChunkGenerator()
-    {
-        return new ChunkProviderDyingWorld(worldObj, worldObj.getSeed());
     }
 
 
