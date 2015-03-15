@@ -1,3 +1,4 @@
+/*
 package com.t3ctonic.mysticenergies.dimension;
 
 import net.minecraft.world.WorldProvider;
@@ -40,4 +41,4 @@ public class WorldProviderDyingWorld extends WorldProvider{
     }
 
 
-}
+}*/
