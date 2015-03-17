@@ -2,6 +2,7 @@ package com.t3ctonic.mysticenergies.recipes;
 
 import com.t3ctonic.mysticenergies.blocks.ModBlocks;
 import com.t3ctonic.mysticenergies.items.ModItems;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
@@ -59,25 +60,29 @@ public class ModRecipes {
                 " X ",
                 'X', Items.stick, '*', ModItems.pureEnergy, 'D', ModItems.darkEnergyAxe, 'L', ModItems.liteEnergyAxe);
 
-        addRecipe(new ItemStack(ModItems.pureEnergyHoe, 1), "**L",
-                "DX ",
+        addRecipe(new ItemStack(ModItems.pureEnergyHoe, 1),
+                "** ",
+                "DXL",
                 " X ",
                 'X', Items.stick, '*', ModItems.pureEnergy, 'L', ModItems.liteEnergyHoe, 'D', ModItems.darkEnergyHoe);
 
-        addRecipe(new ItemStack(ModItems.pureEnergyHoe, 1), "D**",
-                " XL",
+        addRecipe(new ItemStack(ModItems.pureEnergyHoe, 1),
+                " **",
+                "LXD",
                 " X ",
                 'X', Items.stick, '*', ModItems.pureEnergy, 'L', ModItems.liteEnergyHoe, 'D', ModItems.darkEnergyHoe);
 
-        addRecipe(new ItemStack(ModItems.pureEnergy, 3), "**X",
+        addRecipe(new ItemStack(ModItems.pureEnergyBlend, 3),
+                "**X",
                 "*DX",
                 "*XX",
-                'X', ModItems.darkEnergy, '*', ModItems.liteEnergy, 'D', Items.diamond);
+                'X', ModItems.darkEnergy, '*', ModItems.liteEnergy, 'D', Blocks.redstone_block);
 
-        addRecipe(new ItemStack(ModItems.pureEnergy, 3), "*XX",
+        addRecipe(new ItemStack(ModItems.pureEnergyBlend, 3),
+                "*XX",
                 "*DX",
                 "**X",
-                'X', ModItems.darkEnergy, '*', ModItems.liteEnergy, 'D', Items.diamond);
+                'X', ModItems.darkEnergy, '*', ModItems.liteEnergy, 'D', Blocks.redstone_block);
 
         addRecipe(new ItemStack(ModBlocks.pureEnergyBlock, 1),
                 "XXX",
@@ -85,54 +90,65 @@ public class ModRecipes {
                 "XXX",
                 'X', ModItems.pureEnergy);
 
-        addRecipe(new ItemStack(ModItems.darkEnergyPickaxe, 1), "***",
+        addRecipe(new ItemStack(ModItems.darkEnergyPickaxe, 1),
+                "***",
                 " X ",
                 " X ",
                 'X', Items.stick, '*', ModItems.darkEnergy);
 
-        addRecipe(new ItemStack(ModItems.darkEnergySword, 1), " * ",
+        addRecipe(new ItemStack(ModItems.darkEnergySword, 1),
+                " * ",
                 " * ",
                 " X ",
                 'X', Items.stick, '*', ModItems.darkEnergy);
 
-        addRecipe(new ItemStack(ModItems.darkEnergyShovel, 1), " * ",
+        addRecipe(new ItemStack(ModItems.darkEnergyShovel, 1),
+                " * ",
                 " X ",
                 " X ",
                 'X', Items.stick, '*', ModItems.darkEnergy);
 
-        addRecipe(new ItemStack(ModItems.darkEnergyAxe, 1), "** ",
+        addRecipe(new ItemStack(ModItems.darkEnergyAxe, 1),
+                "** ",
                 "*X ",
                 " X ",
                 'X', Items.stick, '*', ModItems.darkEnergy);
 
-        addRecipe(new ItemStack(ModItems.darkEnergyHoe, 1), "** ",
+        addRecipe(new ItemStack(ModItems.darkEnergyHoe, 1),
+                "** ",
                 " X ",
                 " X ",
                 'X', Items.stick, '*', ModItems.darkEnergy);
 
-        addRecipe(new ItemStack(ModItems.liteEnergyPickaxe, 1), "***",
+        addRecipe(new ItemStack(ModItems.liteEnergyPickaxe, 1),
+                "***",
                 " X ",
                 " X ",
                 'X', Items.stick, '*', ModItems.darkEnergy);
 
-        addRecipe(new ItemStack(ModItems.liteEnergySword, 1), " * ",
+        addRecipe(new ItemStack(ModItems.liteEnergySword, 1),
+                " * ",
                 " * ",
                 " X ",
                 'X', Items.stick, '*', ModItems.liteEnergy);
 
-        addRecipe(new ItemStack(ModItems.liteEnergyShovel, 1), " * ",
+        addRecipe(new ItemStack(ModItems.liteEnergyShovel, 1),
+                " * ",
                 " X ",
                 " X ",
                 'X', Items.stick, '*', ModItems.liteEnergy);
 
-        addRecipe(new ItemStack(ModItems.liteEnergyAxe, 1), "** ",
+        addRecipe(new ItemStack(ModItems.liteEnergyAxe, 1),
+                "** ",
                 "*X ",
                 " X ",
                 'X', Items.stick, '*', ModItems.liteEnergy);
 
-        addRecipe(new ItemStack(ModItems.liteEnergyHoe, 1), "** ",
+        addRecipe(new ItemStack(ModItems.liteEnergyHoe, 1),
+                "** ",
                 " X ",
                 " X ",
                 'X', Items.stick, '*', ModItems.liteEnergy);
+
     }
 }

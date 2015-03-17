@@ -27,6 +27,8 @@ public class ModItems {
     public static Item liteEnergyShovel;
     public static Item liteEnergyHoe;
 
+    public static Item pureEnergyBlend;
+
     public static Item energyBrick;
 
     public static void init(){
@@ -52,6 +54,8 @@ public class ModItems {
         liteEnergyAxe = new LiteEnergyAxe();
         liteEnergyShovel = new LiteEnergyShovel();
         liteEnergyHoe = new LiteEnergyHoe();
+
+        pureEnergyBlend = new PureEnergyBlend();
 
         energyBrick = new EnergyBrick(12, 1f, false);
 
