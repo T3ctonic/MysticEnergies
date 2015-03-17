@@ -31,6 +31,8 @@ public class ModItems {
 
     public static Item energyBrick;
 
+    public static Item breadBrick;
+
     public static void init(){
 
         pureEnergy = new PureEnergy();
@@ -58,6 +60,8 @@ public class ModItems {
         pureEnergyBlend = new PureEnergyBlend();
 
         energyBrick = new EnergyBrick(12, 1f, false);
+
+        breadBrick = new BreadBrick();
 
 
     }

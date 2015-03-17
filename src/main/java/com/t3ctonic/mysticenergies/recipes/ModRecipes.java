@@ -150,5 +150,17 @@ public class ModRecipes {
                 " X ",
                 'X', Items.stick, '*', ModItems.liteEnergy);
 
+        addRecipe(new ItemStack(ModItems.breadBrick, 1),
+                "BBB",
+                "BBB",
+                "BBB",
+                'B', Items.bread);
+
+        addRecipe(new ItemStack(ModItems.energyBrick, 4),
+                "RRR",
+                "LBD",
+                "RRR",
+                'D', ModItems.darkEnergy, 'L', ModItems.liteEnergy, 'R', Items.redstone, 'B', ModItems.breadBrick);
+
     }
 }
