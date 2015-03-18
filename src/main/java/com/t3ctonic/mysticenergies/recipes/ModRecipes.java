@@ -7,6 +7,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
 import static cpw.mods.fml.common.registry.GameRegistry.addRecipe;
+import static cpw.mods.fml.common.registry.GameRegistry.addSmelting;
 
 public class ModRecipes {
     public static void init() {
@@ -161,6 +162,8 @@ public class ModRecipes {
                 "LBD",
                 "RRR",
                 'D', ModItems.darkEnergy, 'L', ModItems.liteEnergy, 'R', Items.redstone, 'B', ModItems.breadBrick);
+
+        addSmelting(new ItemStack(ModItems.pureEnergyBlend), new ItemStack(ModItems.pureEnergy), 2.0F);
 
     }
 }
