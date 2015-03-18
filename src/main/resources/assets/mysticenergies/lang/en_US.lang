@@ -13,9 +13,10 @@ itemGroup.mysticenergies.tab=Mystic Energies
 item.mysticenergies_pureEnergy.name=Pure Energy
 item.mysticenergies_darkEnergy.name=Dark Energy
 item.mysticenergies_liteEnergy.name=Lite Energy
+item.mysticenergies_pureEnergyBlend.name=Pure Energy Blend
 
-item.mysticenergies_energyBrick.name= Energy Brick
-
+item.mysticenergies_energyBrick.name=Energy Brick
+item.mysticenergies_breadBrick.name=Bread Brick
 
 
 
