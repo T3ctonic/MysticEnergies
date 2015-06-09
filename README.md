@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 MysticEnergies
 ==============
 
@@ -8,6 +7,3 @@ My mod :)
 
 Made by T3ctonic (and iLexiconn)
 ---------------------------------
-=======
-# MysticEnergies
->>>>>>> origin/master
